@@ -3,11 +3,10 @@
 import wpilib
 from wpilib.command import Subsystem
 from wpilib.drive import DifferentialDrive
-from left_motors import Left_Motors
-from right_motors import Right_Motors
-import sys
-sys.path.append('./commands')
-from do_tank_drive import Do_Tank_Drive
+
+from .left_motors import Left_Motors
+from .right_motors import Right_Motors
+from commands.do_tank_drive import Do_Tank_Drive
 
 class Drivetrain(Subsystem):
 	def __init__(self, robot):

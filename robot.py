@@ -8,23 +8,7 @@ from wpilib.buttons import JoystickButton
 #import time
 #from networktables import NetworkTables
 from commandbased.commandbasedrobot import CommandBasedRobot
-#
-# Non robot specific libraries
-#import os
-import sys
-#import math
-#
-##Linux path
-sys.path.append('./subsystems') 
-sys.path.append('./commands') 
-#sys.path.append('./tests')
-#sys.path.append('./vision')
-#
-##RoboRIO path
-#sys.path.insert(0, '/home/lvuser/py/subsystems')
-#sys.path.insert(0, '/home/lvuser/py/commands')
-#sys.path.insert(0, '/home/lvuser/py/tests')
-#sys.path.insert(0, '/home/lvuser/py/vision')
+
 #
 ## Subsidiary objects on the robot. Ex: Cube Intake from 2017/18 season
 ##XXX shifters deprecated, need to remove from all active code this year
@@ -37,7 +21,7 @@ sys.path.append('./commands')
 #from winch import Winch
 #from climber import Climber
 #
-from drivetrain import Drivetrain
+from subsystems.drivetrain import Drivetrain
 #
 ## Teleop init command
 #from oi import OI
