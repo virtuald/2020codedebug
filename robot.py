@@ -11,7 +11,7 @@ from commandbased.commandbasedrobot import CommandBasedRobot
 #
 # Non robot specific libraries
 #import os
-#import sys
+import sys
 #import math
 #
 ##Linux path
