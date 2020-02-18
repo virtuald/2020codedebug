@@ -165,5 +165,5 @@ class BeaverTronicsRobot(CommandBasedRobot):
 #		# TextTestRunner just outputs to stdout what is happening
 #		unittest.TextTestRunner(verbosity=2).run(suite)
 #
-#if __name__ == "__main__":
-#	wpilib.run(BeaverTronicsRobot)
+if __name__ == "__main__":
+	wpilib.run(BeaverTronicsRobot)

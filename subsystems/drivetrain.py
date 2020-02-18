@@ -2,8 +2,12 @@
 
 import wpilib
 from wpilib.command import Subsystem
-from Left_Motors import left_motors
-from Right_Motors import right_motors
+from wpilib.drive import DifferentialDrive
+from left_motors import Left_Motors
+from right_motors import Right_Motors
+import sys
+sys.path.append('./commands')
+from do_tank_drive import Do_Tank_Drive
 
 class Drivetrain(Subsystem):
 	def __init__(self, robot):
@@ -13,7 +17,7 @@ class Drivetrain(Subsystem):
 
 		'''
 		super().__init__("drivetrain")
-		print("drivetrain init! no seg fault please")
+		#print("drivetrain init! no seg fault please")
 
 		self.robot = robot
 		self.lm_inst = Left_Motors().left_motor_group
